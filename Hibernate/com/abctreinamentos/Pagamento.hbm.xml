@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19/09/2019 17:08:17 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Pagamento" table="pagamento" catalog="curso_java8" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.PagamentoId">
+            <key-property name="id" type="int">
+                <column name="id" />
+            </key-property>
+            <key-property name="codcurso" type="int">
+                <column name="codcurso" />
+            </key-property>
+        </composite-id>
+        <property name="datainscricao" type="string">
+            <column name="datainscricao" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>
